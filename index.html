@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Power BI Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            padding: 60px 20px;
+        }
+        
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .portfolio-item {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        
+        .portfolio-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .portfolio-content {
+            padding: 20px;
+        }
+        
+        .portfolio-content h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+        
+        .portfolio-content p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .portfolio-links {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #5a6fd8;
+        }
+        
+        .btn-secondary {
+            background: #f8f9fa;
+            color: #333;
+            border: 1px solid #ddd;
+        }
+        
+        .btn-secondary:hover {
+            background: #e9ecef;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+        
+        @media (max-width: 768px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Power BI Portfolio</h1>
+            <p>Collection of my data analytics and visualization projects</p>
+        </header>
+
+        <div class="portfolio-grid">
+            <!-- ONE GATE MONITORING PROJECT -->
+            <div class="portfolio-item">
+                <img src="screenshots/page1.png" alt="One Gate Monitoring Shipment" class="portfolio-image">
+                <div class="portfolio-content">
+                    <h3>One Gate Monitoring Shipment</h3>
+                    <p>Comprehensive shipment monitoring dashboard tracking delivery performance, gate operations, and logistics efficiency in real-time.</p>
+                    <div class="portfolio-links">
+                        <a href="reports/One Gate Monitoring.pbix" class="btn btn-primary">Download .pbix</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TEMPLATE UNTUK PROJECT LAIN (JIKA ADA) -->
+            <!--
+            <div class="portfolio-item">
+                <img src="screenshots/your-next-screenshot.png" alt="Next Project" class="portfolio-image">
+                <div class="portfolio-content">
+                    <h3>Your Next Project Title</h3>
+                    <p>Description of your next project goes here.</p>
+                    <div class="portfolio-links">
+                        <a href="reports/your-next-file.pbix" class="btn btn-primary">Download .pbix</a>
+                    </div>
+                </div>
+            </div>
+            -->
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Data Portfolio | Built with ❤️ and Power BI</p>
+    </footer>
+</body>
+</html>
